@@ -1,0 +1,36 @@
+:root {
+  --header-height: 80px;
+
+  --yellow: #ebc15f;
+  --blue: #2c9fe3;
+  --purple: #4650a3;
+
+  --main-color: #09485b;
+  --main-color_transparent: rgba(9, 73, 93, 0.5);
+  --secondary-color: #db093d;
+  --secondary-color_transparent: rgba(220, 9, 62, 0.5);
+  --disabled-color: #d3d3d3;
+  --text-color: #222;
+  --text-selection-color: #0e6f8c;
+}
+
+//! ФУНКЦИЯ АДАПТИВНОГО РАЗМЕРА
+@function calcFluidSizeWidth($s-min, $s-max, $v-min, $v-max) {
+  $k: ($s-max - $s-min)/ ($v-max - $v-min);
+  $b: $s-min - $k * $v-min;
+
+  $b: $b * 1px;
+
+  @return calc(#{$k} * 100vw + #{$b});
+}
+
+@function calcFluidSizeHeight($s-min, $s-max, $v-min, $v-max) {
+  $k: ($s-max - $s-min)/ ($v-max - $v-min);
+  $b: $s-min - $k * $v-min;
+
+  $b: $b * 1px;
+
+  @return calc(#{$k} * 100vh + #{$b});
+}
+
+// !==================================

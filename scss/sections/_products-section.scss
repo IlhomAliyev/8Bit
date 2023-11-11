@@ -1,0 +1,35 @@
+#products {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.all-services {
+  height: max-content;
+
+}
+
+.service {
+  cursor: grab;
+  border-radius: 18px;
+  padding: 30px;
+  padding-bottom: 0;
+  background-color: white;
+  color: #222;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    color: var(--main-color);
+    margin-bottom: 10px;
+  }
+
+  img {
+    width: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+}

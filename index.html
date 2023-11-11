@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/8bit-modern-logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>8Bit Site Prototype</title>
+  </head>
+  <body>
+    <header>
+      <a id="logo" href="#">
+        <img src="./img/8bit-modern-logo.svg" alt="8Bit" />
+      </a>
+      <a id="logo_white" href="#">
+        <img src="./img/8bit-white-logo.svg" alt="8Bit" />
+      </a>
+      <nav>
+        <a href="#main">Главная</a>
+        <a href="#about">О компании</a>
+        <a href="#products">Продукты и услуги</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div id="menu-btn"><span></span></div>
+    </header>
+    <div class="container">
+      <section id="main">
+        <div class="main-content" data-aos="fade-right">
+          <h1>8Bit Agency</h1>
+          <p>
+            Коммуникационное агентство полного цикла, которое решает задачи
+            любой сложности
+          </p>
+          <div class="btns-wrapper">
+            <button type="button" class="primary-btn">Заказать</button>
+            <button type="button">Помощь</button>
+          </div>
+        </div>
+        <img
+          class="bg-logo"
+          src="./img/8bit-modern-logo_small.svg"
+          alt="8Bit Logo"
+          data-aos="fade-left"
+        />
+      </section>
+      <section id="about">
+        <h2>О компании</h2>
+        <div class="about-part about-part_1">
+          <p data-aos="fade-down-right">
+            Наше коммуникационное агентство представляет собой симбиоз
+            мастерства и инноваций, ориентированных на результат. Наша миссия
+            заключается в том, чтобы помогать вашему бизнесу расти, преодолевать
+            сложности и достигать новых высот.
+          </p>
+          <div data-aos="fade-down-left" class="image-wrapper_circle">
+            <img src="./img/man-1.png" alt="Man" />
+          </div>
+        </div>
+        <div class="about-part about-part_2">
+          <div data-aos="fade-up-right" class="image-wrapper_circle">
+            <img src="./img/woman-1.png" alt="Woman" />
+          </div>
+          <p data-aos="fade-up-left">
+            Мы ценим прозрачность, честность и интегритет в каждом
+            взаимодействии с нашими клиентами. Наша команда стремится к
+            глубокому пониманию вашего бизнеса, чтобы предложить наилучшие
+            решения, отражающие вашу уникальную марку.
+          </p>
+        </div>
+      </section>
+      <section id="products">
+        <h2>Продукты и услуги</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper all-services">
+            <div class="swiper-slide service">
+              <h3>PR. Организация PR мероприятий</h3>
+              <p>
+                Завоюйте внимание вашей аудитории с нашими PR-стратегиями и
+                организацией мероприятий. Мы создаем события, которые не только
+                укрепляют репутацию бренда, но и генерируют положительное
+                внимание в СМИ.
+              </p>
+              <img src="./img/man-2.png" alt="PR manager" />
+            </div>
+            <div class="swiper-slide service">
+              <h3>Media Buying</h3>
+              <p>
+                Мы предлагаем точное и эффективное размещение рекламы. Наш опыт
+                в Media Buying помогает определить правильные каналы для вашей
+                целевой аудитории, обеспечивая оптимальные результаты.
+              </p>
+              <img src="./img/woman-2.png" alt="Media Buying" />
+            </div>
+            <div class="swiper-slide service">
+              <h3>Digital</h3>
+              <p>
+                В эпоху цифровых технологий, мы создаем комплексные стратегии,
+                которые охватывают все аспекты вашего онлайн-присутствия.
+              </p>
+              <img src="./img/man-3.png" alt="Digital" />
+            </div>
+            <div class="swiper-slide service">
+              <h3>Контекстная реклама</h3>
+              <p>
+                Наши эксперты в контекстной рекламе разрабатывают эффективные
+                кампании, направленные на привлечение целевой аудитории и
+                повышение конверсии.
+              </p>
+              <img src="./img/woman-3.png" alt="Контекстная реклама" />
+            </div>
+            <div class="swiper-slide service">
+              <h3>SEO</h3>
+              <p>
+                Улучшите видимость вашего бренда в поисковых результатах. Наши
+                SEO-специалисты работают над оптимизацией вашего контента и
+                техническими аспектами сайта.
+              </p>
+              <img src="./img/man-4.png" alt="SEO" />
+            </div>
+            <div class="swiper-slide service">
+              <h3>SMM</h3>
+              <p>
+                Мы создаем и воплощаем стратегии в социальных сетях, чтобы ваш
+                бренд был активен, вовлечен и в центре внимания вашей целевой
+                аудитории.
+              </p>
+              <img src="./img/man-5.png" alt="SMM" />
+            </div>
+            <div class="swiper-slide service">
+              <h3>Графический дизайн</h3>
+              <p>
+                Наша креативная команда разрабатывает уникальные и выразительные
+                графические решения, которые делают ваш бренд неповторимым.
+              </p>
+              <img src="./img/man-6.png" alt="Designer" />
+            </div>
+            <div class="swiper-slide service">
+              <h3>2D / 3D анимация</h3>
+              <p>
+                Оживите свой контент с помощью наших профессиональных 2D и 3D
+                анимаций. Мы создаем визуальные впечатления, которые оставляют
+                долгое впечатление.
+              </p>
+              <img src="./img/man-1.png" alt="Animator" />
+            </div>
+            <div class="swiper-slide service">
+              <h3>Разработка ботов</h3>
+              <p>
+                В мире автоматизации мы создаем инновационные боты, которые
+                обеспечивают не только эффективное взаимодействие с клиентами,
+                но и оптимизацию бизнес-процессов.
+              </p>
+              <img src="./img/woman-1.png" alt="Bots" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacts">
+        <div data-aos="fade-up" class="contacts_left">
+          <h2>Контакты:</h2>
+          <div class="connection">
+            <img src="./img/phone-icon.svg" alt="Phone" />
+            <p>Телефон: +998 90 825-72-25</p>
+          </div>
+          <div class="connection">
+            <img src="./img/mail-icon.svg" alt="Mail" />
+            <p>Электронная почта: ilhomaliyev@yandex.com</p>
+          </div>
+          <div class="connection">
+            <img src="./img/telegram-icon.svg" alt="Telegram" />
+            <p>Telegram: @ilhomaliyev</p>
+          </div>
+          <p class="contacts-text no-select">
+            Мы всегда рады новым проектам и готовы помочь вашему бизнесу достичь
+            новых высот. Свяжитесь с нами прямо сейчас!
+          </p>
+        </div>
+        <div data-aos="fade-up" class="contacts_right">
+          <div class="discount">10%</div>
+          <form class="registration-form" action="#">
+            <div class="input-wrapper">
+              <input type="text" name="name" required />
+              <div class="input-placeholder">Имя</div>
+            </div>
+            <div class="input-wrapper">
+              <input type="text" name="surname" required />
+              <div class="input-placeholder">Фамилия</div>
+            </div>
+            <div class="input-wrapper">
+              <input type="tel" name="surname" required />
+              <div class="input-placeholder">
+                <img src="./img/uzb-flag.svg" alt="UZB" />
+                <span>+998</span> (__) ___ __ __
+              </div>
+            </div>
+            <button type="submit">Записаться на курс</button>
+          </form>
+          <p class="comments main-comment">Остались вопросы?</p>
+          <p class="comments">Звоните: +998 90 123-45-67</p>
+          <p class="comments">Наши консультанты доступны 24/7</p>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

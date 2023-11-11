@@ -1,0 +1,45 @@
+#about {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.about-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  p {
+    flex: 1 1 auto;
+  }
+
+  .image-wrapper_circle {
+    flex: 0 0 260px;
+    overflow: hidden;
+
+    border-radius: 50%;
+    background-color: white;
+    height: 260px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .about-part {
+    &_1 {
+      flex-direction: column-reverse;
+    }
+    &_2 {
+      flex-direction: column;
+    }
+  }
+}
