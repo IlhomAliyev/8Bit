@@ -1,5 +1,6 @@
 #contacts {
-  padding: calc(4.4vw + 23px) calc(10.6vw - 16px); /* 80px - 40px снизу и сверху */ /* 120px - 24px по бокам */
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: rgb(33, 33, 33);
   display: flex;
   gap: 45px;
@@ -78,7 +79,7 @@
   font-size: 40px;
 }
 
-.registration-form {
+#main-form {
   margin-bottom: 30px;
 }
 

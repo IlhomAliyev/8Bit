@@ -3,28 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./img/8bit-modern-logo.svg"
-      type="image/x-icon"
-    />
+    <title>8Bit Site Prototype (Ilhom Aliyev)</title>
+    <meta name="title" content="8Bit Site Prototype (Ilhom Aliyev)" />
+    <meta name="description" content="Коммуникационное агентство полного цикла, которое решает задачи любой сложности" />
+    <!-- OpenGraph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="8bit-prototype.uz" />
+    <meta property="og:title" content="8Bit Site Prototype (Ilhom Aliyev)" />
+    <meta property="og:description" content="Коммуникационное агентство полного цикла, которое решает задачи любой сложности" />
+    <meta property="og:image" content="" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="8bit-prototype.uz" />
+    <meta property="twitter:title" content="8Bit Site Prototype (Ilhom Aliyev)" />
+    <meta property="twitter:description" content="Коммуникационное агентство полного цикла, которое решает задачи любой сложности" />
+    <meta property="twitter:image" content="" />
+
+    <link rel="shortcut icon" href="./img/8bit-modern-logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <title>8Bit Site Prototype</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <header>
@@ -35,10 +34,10 @@
         <img src="./img/8bit-white-logo.svg" alt="8Bit" />
       </a>
       <nav>
-        <a href="#main">Главная</a>
-        <a href="#about">О компании</a>
-        <a href="#products">Продукты и услуги</a>
-        <a href="#contacts">Контакты</a>
+        <a class="nav-links" href="#main">Главная</a>
+        <a class="nav-links" href="#about">О компании</a>
+        <a class="nav-links" href="#products">Продукты и услуги</a>
+        <a class="nav-links" href="#contacts">Контакты</a>
       </nav>
       <div id="menu-btn"><span></span></div>
     </header>
@@ -51,7 +50,9 @@
             любой сложности
           </p>
           <div class="btns-wrapper">
-            <button type="button" class="primary-btn">Заказать</button>
+            <button type="button" class="primary-btn">
+              <a href="#contacts">Заказать</a>
+            </button>
             <button type="button">Помощь</button>
           </div>
         </div>
@@ -196,7 +197,7 @@
         </div>
         <div data-aos="fade-up" class="contacts_right">
           <div class="discount">10%</div>
-          <form class="registration-form" action="#">
+          <form id="main-form" action="#">
             <div class="input-wrapper">
               <input type="text" name="name" required />
               <div class="input-placeholder">Имя</div>
@@ -206,13 +207,13 @@
               <div class="input-placeholder">Фамилия</div>
             </div>
             <div class="input-wrapper">
-              <input type="tel" name="surname" required />
+              <input type="tel" name="phoneNumber" required />
               <div class="input-placeholder">
                 <img src="./img/uzb-flag.svg" alt="UZB" />
                 <span>+998</span> (__) ___ __ __
               </div>
             </div>
-            <button type="submit">Записаться на курс</button>
+            <button type="submit">Отправить</button>
           </form>
           <p class="comments main-comment">Остались вопросы?</p>
           <p class="comments">Звоните: +998 90 123-45-67</p>
@@ -228,6 +229,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="./js/main.js"></script>
+    <script defer type="module" src="./js/main.js"></script>
   </body>
 </html>

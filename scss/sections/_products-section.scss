@@ -3,13 +3,12 @@
   color: white;
 }
 
-.all-services {
-  height: max-content;
-
+.swiper {
+  height: max-content !important;
 }
 
 .service {
-  cursor: grab;
+  // cursor: grab;
   border-radius: 18px;
   padding: 30px;
   padding-bottom: 0;

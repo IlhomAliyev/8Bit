@@ -38,10 +38,10 @@ button {
   backdrop-filter: blur(3px);
   border: 1px solid var(--main-color);
   outline: 0;
-  transition: 200ms;
+  transition: 300ms;
   font-size: inherit;
   color: inherit;
-  border-radius: 12px;
+  border-radius: 14px;
 
   &:disabled {
     background-color: var(--disabled-color);
@@ -78,10 +78,10 @@ button {
 .input-wrapper {
   position: relative;
   margin: 0 auto 25px;
-}
 
-.input-wrapper:last-of-type {
-  margin-bottom: 30px;
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
 }
 
 .input-placeholder {
@@ -89,16 +89,14 @@ button {
   top: 4.5px;
   left: 10px;
   pointer-events: none;
-  font-weight: 400;
-  font-size: calc(0.2vw + 17px); /* 20px - 18px */
-  line-height: 150%;
+  font-size: calcFluidSizeWidth(16, 20, 360, 1920);
   color: #a1a1a16b;
   transform-origin: left;
-  transition: 0.2s;
+  transition: 300ms;
 }
 
 .input-placeholder span {
-  color: #222222;
+  color: var(--text-color);
 }
 
 input {
@@ -109,14 +107,11 @@ input {
   appearance: none;
   border: 0;
   border-bottom: 1px solid #a1a1a16b;
-  transition: 0.1s;
-
-  font-weight: 400;
-  font-size: calc(0.2vw + 17px); /* 20px - 18px */
-  line-height: 150%;
+  font-size: calcFluidSizeWidth(16, 20, 360, 1920);
+  transition: 300ms;
 
   &:hover {
-    border-bottom: 1px solid var(--main-color);
+    border-bottom-color: var(--main-color);
   }
 
   &:focus {

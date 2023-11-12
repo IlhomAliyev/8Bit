@@ -6,7 +6,7 @@
 
 # Запуск проекта:
 
-Если вы пользуетесь Visual Studio Code (VS Code), вы можете запустить проект с помощью расширения "Live Server". [Ссылка на расширение](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) доступна в закреплениях.
+Если вы пользуетесь Visual Studio Code (VS Code), вы можете запустить проект с помощью расширения "Live Server" (ссылку оставил в закреплениях).
 
 ---
 
