@@ -148,6 +148,7 @@ nav {
   nav {
     background-color: rgba(255, 255, 255, 0.8);
     color: var(--text-color);
+    backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
     left: 0;

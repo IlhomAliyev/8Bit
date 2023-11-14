@@ -504,6 +504,8 @@ nav {
   nav {
     background-color: rgba(255, 255, 255, 0.8);
     color: var(--text-color);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
     left: 0;
@@ -632,6 +634,9 @@ nav {
 }
 
 @media (max-width: 700px) {
+  .about-part .image-wrapper_circle {
+    width: 260px;
+  }
   .about-part_1 {
     flex-direction: column-reverse;
   }

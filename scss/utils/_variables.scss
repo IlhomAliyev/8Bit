@@ -12,19 +12,19 @@
 
 //! ФУНКЦИЯ АДАПТИВНОГО РАЗМЕРА
 @function calcFluidSizeWidth($s-min, $s-max, $v-min, $v-max) {
-  $k: ($s-max - $s-min)/ ($v-max - $v-min);
-  $b: $s-min - $k * $v-min;
+  $k: calc(($s-max - $s-min) / ($v-max - $v-min));
+  $b: calc($s-min - $k * $v-min);
 
-  $b: $b * 1px;
+  $b: calc($b * 1px);
 
   @return calc(#{$k} * 100vw + #{$b});
 }
 
 @function calcFluidSizeHeight($s-min, $s-max, $v-min, $v-max) {
-  $k: ($s-max - $s-min)/ ($v-max - $v-min);
-  $b: $s-min - $k * $v-min;
+  $k: calc(($s-max - $s-min) / ($v-max - $v-min));
+  $b: calc($s-min - $k * $v-min);
 
-  $b: $b * 1px;
+  $b: calc($b * 1px);
 
   @return calc(#{$k} * 100vh + #{$b});
 }

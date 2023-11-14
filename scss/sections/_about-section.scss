@@ -35,6 +35,10 @@
 
 @media (max-width: 700px) {
   .about-part {
+    .image-wrapper_circle {
+      width: 260px;
+    }
+    
     &_1 {
       flex-direction: column-reverse;
     }
